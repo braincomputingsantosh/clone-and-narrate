@@ -1,0 +1,17 @@
+# Pinned because newer versions break the stack in different ways.
+# Rationale:
+# - TTS 0.22.0 is the last public release of the original Coqui TTS package
+#   (project archived 2024).
+# - transformers==4.40.2 is the last minor version that still exposes the
+#   BeamSearchScorer symbol TTS 0.22.0 imports.
+# - llvmlite==0.43.0 + numba==0.60.0 both ship prebuilt wheels for
+#   cp311-macosx_10_9_x86_64 on PyPI, avoiding source compilation.
+
+TTS==0.22.0
+transformers==4.40.2
+llvmlite==0.43.0
+numba==0.60.0
+torch==2.2.2
+PyMuPDF>=1.24
+pydub>=0.25
+mutagen>=1.47

@@ -1,0 +1,36 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Personal / copyrighted inputs (never commit)
+*.pdf
+voice_sample*
+*.m4a
+*.wav
+*.mp3
+*.m4b
+*.aac
+*.aiff
+
+# Generated outputs
+chapters_text/
+chapters_audio/
+narration.log
+narration_stdout.log
+
+# Article drafts (kept local)
+Medium.MD
+medium.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
